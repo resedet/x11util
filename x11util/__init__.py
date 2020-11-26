@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 #
 # Wrapper fucntions to make X11 low-level Xlib programming easier.
@@ -13,12 +14,19 @@ import time
 from Xlib import X, display
 from perlcompat import die
 
-FONT_NAME = '-schumacher-clean-bold-r-normal--8-80-75-75-c-80-iso646.1991-irv'
+# FONT_NAME = '-hiro-fixed-medium-r-normal--8-80-75-75-c-80-iso646.1991-irv'
+FONT_NAME = '-schumacher-clean-medium-r-normal--9-80-75-75-c-60-iso646.1991-irv'
+# FONT_NAME = '-schumacher-clean-medium-r-normal--15-150-75-75-c-90-iso646.1991-irv'
+# FONT_NAME = '-schumacher-clean-medium-r-normal--8-80-75-75-c-80-iso646.1991-irv'
+# FONT_NAME = '-xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1'
 FONT_WIDTH = 8
 FONT_HEIGHT = 8
 
 COLORS = [
+    'SteelBlue',
     'SteelBlue1',
+    'SteelBlue2',
+    'Cyan',
     'PaleGreen',
     'LightGoldenrod',
     'chocolate1',
@@ -31,6 +39,11 @@ COLORS = [
     'DarkSlateGray',
     'orange',
     'OrangeRed',
+    'Cadet Blue',
+    'LightSteelBlue',
+    'Lavender',
+    'LightBlue',
+    'Dark Cyan'
 ]
 
 def load_rcfile():
